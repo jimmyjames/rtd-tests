@@ -1,4 +1,31 @@
 .test-some-class {
     background: url('../images/clippy.svg') no-repeat;
-    background-size: 20px 20px;    
+    background-size: 20px 20px;
+}
+
+.codeblock, pre.literal-block, .rst-content .literal-block, .rst-content pre.literal-block, div[class^='highlight'] {
+    border-radius: 3px !important;
+    position: relative;
+    background: #3f3e43;
+    /* make sure copy tooltip can be seen */
+    overflow: visible;
+}
+
+/* overrides for dark monokai theme */
+div[class^='highlight'] pre {
+    font-size: 13px;
+}
+.highlight-http pre,
+.highlight-json pre,
+.highlight-bash pre,
+.highlight-python pre,
+.highlight-rst pre {
+    color: #fff !important;
+}
+.highlight .c1,
+.highlight .cm {
+    /*color: #e3e3e3 !important; */
+}
+.linenodiv pre {
+    color: #fff !important;
 }
